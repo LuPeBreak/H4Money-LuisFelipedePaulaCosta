@@ -2,7 +2,7 @@ Esta aplicaçao foi feita mediante teste para vaga de estagio da empresa H4Money
 
 ## Objetivo
 
-Sistem de crud de clientes utilizando PHP vanilla e o template https://getbootstrap.com/docs/4.2/examples/dashboard, tendo consulta de cep para o cadastro de clientes via webservice https://viacep.com.br/
+Sistem de CRUD de clientes utilizando PHP vanilla e o template https://getbootstrap.com/docs/4.2/examples/dashboard, tendo consulta de cep para o cadastro de clientes via webservice https://viacep.com.br/
 
 ## Instalação 
 
