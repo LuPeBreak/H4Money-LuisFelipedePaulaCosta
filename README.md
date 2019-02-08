@@ -1,10 +1,12 @@
+Esta aplicaçao foi feita mediante teste para vaga de estagio da empresa H4Money
+
 ## Objetivo
 
-O objetivo desse projeto é criar um simples crud organizado, sem a utilizaçao do Composer, frameworks e plugins
+Sistem de crud de clientes utilizando PHP vanilla e o template https://getbootstrap.com/docs/4.2/examples/dashboard, tendo consulta de cep para o cadastro de clientes via webservice https://viacep.com.br/
 
 ## Instalação 
 
-* Crie um BD com o nome de CRUD(ou mude o nome do banco no arquivo Config)
-* importe a tabela alunos(arquivo sql dentro da pasta database)
+* Crie um BD com o nome de etapa1(ou mude o nome do banco no arquivo Config)
+* importe a tabela cliente(arquivo sql dentro da pasta database)
 * Dentro da pasta do projeto, abra o terminal e digite php -S localhost:8001
 * Acesse o link http://localhost:8001
