@@ -18,6 +18,8 @@ $data = [
     "cpf" =>$_POST["cpf"]
 ];
 
+
+//validaçao dos campos requeridos (nome e cpf)
 if(!validate($data)){
     header("location:http://$root/Error.php");
     return false;

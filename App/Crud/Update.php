@@ -30,6 +30,7 @@ public function build($table, array $data, $clause){
     return $this->success;
 }
 
+//constroi a query
 private function buildQuery($clause){
     
     foreach($this->data as $key => $value){

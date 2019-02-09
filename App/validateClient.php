@@ -1,5 +1,6 @@
 <?php 
 
+//funçao de validaçao para os campos cpf e nome
 function validate($client = []){
     if( validateName($client['nome']) && validateCPF($client['cpf'])){
         return true;
@@ -7,6 +8,7 @@ function validate($client = []){
     return false;
 }
 
+//validaçao do nome
 function validateName($name){
     if(empty($name)) {
 		return false;
@@ -16,6 +18,8 @@ function validateName($name){
     }
     return true;
 }
+
+//validaçao do cpf
 function validateCPF($cpf) {
 
 	// Verifica se o CPF esta vazio
