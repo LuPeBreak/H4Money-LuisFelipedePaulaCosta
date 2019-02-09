@@ -1,9 +1,10 @@
 <?php 
 
 require __DIR__."/../Config.php";
-require __DIR__."/Crud/Update.php";
+require __DIR__."/Crud/insert.php";
+require __DIR__."/validateClient.php";
 
-$update = new Update;
+$insert = new insert;
 
 $data = [
     "nome" => $_POST["nome"],
@@ -17,7 +18,12 @@ $data = [
     "cpf" =>$_POST["cpf"]
 ];
 
-$update->build('cliente',$data,"Where id= {$_POST["id"]}");
+if(!validate($data)){
+    header("location:http://$root/Error.php");
+    return false;
+}
+
+$insert->build('cliente',$data);
 
 
 header("location:http://$root");

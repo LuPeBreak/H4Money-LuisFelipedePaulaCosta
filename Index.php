@@ -59,7 +59,7 @@
 
 <body>
   <nav class="navbar navbar-dark fixed-top bg-dark flex-md-nowrap p-0 shadow">
-    <a class="navbar-brand col-sm-3 col-md-2 mr-0" href="#">H4Money</a>
+    <a class="navbar-brand col-sm-3 col-md-2 mr-0" href="/">H4Money</a>
   </nav>
 
   <div class="container-fluid">
@@ -74,7 +74,7 @@
               </a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="/Cadastro.php">
+              <a class="nav-link" href="/Register.php">
                 <i class="fa fa-user-plus"></i>
                 Cadastro de Clientes
               </a>
@@ -119,7 +119,7 @@
               </thead>
               <tbody>
                 <?php
-                require __DIR__."/App/ReadClientes.php";
+                require __DIR__."/App/ReadClient.php";
 
                 foreach($clientes as $cliente){
                   echo "<tr>";
@@ -132,7 +132,7 @@
                   echo "<td>{$cliente['cidade']}</td>";
                   echo "<td>{$cliente['uf']}</td>";
                   echo "<td>{$cliente['cpf']}</td>";
-                  echo "<td><a class='btn btn-danger btn-sm' href='App/DeleteClientes.php?id={$cliente['id']}'>Delete</a>  <a class='btn btn-light btn-sm' href='UpdatePage.php?id={$cliente['id']}'>Update</a></td>";
+                  echo "<td><a class='btn btn-danger btn-sm' href='App/DeleteClient.php?id={$cliente['id']}'>Deletar</a>  <a class='btn btn-light btn-sm' href='UpdatePage.php?id={$cliente['id']}'>Atualizar</a></td>";
                   echo "</tr>";
                   }
                 ?>

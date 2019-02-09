@@ -57,6 +57,40 @@
 </head>
 
 <body>
+    <script>
+
+        function validate(){
+
+            if(document.getElementById('cpf').value == ''){
+                alert('preencha o cpf por favor');
+                document.getElementById('cpf').focus();
+                return false;
+            }
+            if(document.getElementById('nome').value == ''){
+                alert('preencha o nome por favor');
+                document.getElementById('nome').focus();
+                return false;
+            }
+            if(document.getElementById('cpf').value.length != 14){
+                alert('preencha um cpf valido');
+                document.getElementById('cpf').focus();
+                return false;
+            }
+            if(document.getElementById('endereco').value.length >= 45){
+                alert('O endereco esta muito grande, por favor utilize padroes reduzidos como R.nomedarua');
+                document.getElementById('endereco').focus();
+                return false;
+            }
+            if(document.getElementById('uf').value.length != 2){
+                alert('Utilize a sigla de seu estado no campo UF. Ex: Rio de janeiro = RJ');
+                document.getElementById('uf').focus();
+                return false;
+            }
+            
+        }
+
+</script>
+
     <nav class="navbar navbar-dark fixed-top bg-dark flex-md-nowrap p-0 shadow">
         <a class="navbar-brand col-sm-3 col-md-2 mr-0" href="#">H4Money</a>
     </nav>
@@ -73,7 +107,7 @@
                             </a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="/Cadastro.php">
+                            <a class="nav-link" href="/Register.php">
                                 <i class="fa fa-user-plus"></i>
                                 Cadastro de Clientes
                             </a>
@@ -94,17 +128,17 @@
 
                 <div class="container">
                     <h2>Cadastro de clientes</h2>
-                    <form action="App/InsertCliente.php" method="POST">
+                    <form action="App/InsertClient.php" method="POST" onSubmit='return validate()'>
                         <div class="form-group">
-                            Nome: <input class="form-control" type="text" name="nome" required><br>
-                            Email: <input class="form-control" type="email" name="email"><br>
+                            Nome: <input id='nome' class="form-control" type="text" name="nome" required><br>
+                            Email: <input class="email form-control" type="email" name="email"><br>
                             Cep: <input class='cep form-control' type="text" name="cep"><br>
-                            Endereço: <input class='endereco form-control' type="text" name="endereco"><br>
-                            Numero: <input class='form-control' type="text" name="numero"><br>
+                            Endereço: <input id='endereco' class='endereco form-control' type="text" name="endereco"><br>
+                            Numero: <input class='numero form-control' type="text" name="numero"><br>
                             Bairro: <input class='bairro form-control' type="text" name="bairro"><br>
                             Cidade: <input class='cidade form-control' type="text" name="cidade"><br>
-                            UF: <input class='uf form-control' type="text" name="uf"><br>
-                            Cpf: <input class='cpf form-control' type="text" name="cpf" required><br>
+                            UF: <input id='uf' class='uf form-control' type="text" name="uf"><br>
+                            Cpf: <input id='cpf' class='cpf form-control' type="text" name="cpf" required><br>
 
                         </div>
                         <input type="submit" class="btn btn-primary" value="Submit">
@@ -120,8 +154,7 @@
     <script>
         window.jQuery || document.write('<script src="/docs/4.2/assets/js/vendor/jquery-slim.min.js"><\/script>')
     </script>
-   	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.maskedinput/1.4.1/jquery.maskedinput.js"></script>
-
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.maskedinput/1.4.1/jquery.maskedinput.js"></script>
 
     <script>
         $(".cep").change(function () {
@@ -133,21 +166,20 @@
                 $(".uf").val(data['uf']);
                 $(".cidade").val(data['localidade']);
 
-                if(data['erro']){
+                if (data['erro']) {
                     alert('cep nao encontrado');
-                };   
+                };
 
-                
+
 
             });
 
         });
 
-        
+
 
         $(".cpf").mask('999.999.999-99');
         $(".cep").mask('99999-999');
-
     </script>
 </body>
 

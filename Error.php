@@ -94,9 +94,9 @@
 
       <main role="main" class="col-md-9 ml-sm-auto col-lg-10 px-4">
 
-         <h4>
-         Quantidade de clientes:<?php require __DIR__."/App/Count.php"; echo $count[0][0] ?>
-         </h4> 
+         <h3>
+         Voce digitou um Cpf invalido ou um nome muito pequeno tente novamente
+         </h3> 
           
 
       </main>
