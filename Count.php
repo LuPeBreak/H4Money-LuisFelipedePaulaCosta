@@ -71,7 +71,7 @@
           <li class="nav-item">
               <a class="nav-link" href="/Count.php">
                 <i class="fa fa-users"></i>
-                quantidade de Clientes
+                Quantidade de Clientes
               </a>
             </li>
             <li class="nav-item">
