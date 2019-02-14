@@ -27,7 +27,7 @@
     }
   </style>
   <!-- Custom styles for this template -->
-  <link href="Css/Style.css" rel="stylesheet">
+  <link href="/css/style.css" rel="stylesheet">
   <style type="text/css">
     /* Chart.js */
     @-webkit-keyframes chartjs-render-animation {
@@ -67,7 +67,7 @@
       <nav class="col-md-2 d-none d-md-block bg-light sidebar">
         <div class="sidebar-sticky">
           <ul class="nav flex-column">
-          <li class="nav-item">
+            <li class="nav-item">
               <a class="nav-link" href="/Count.php">
                 <i class="fa fa-users"></i>
                 quantidade de Clientes
@@ -92,12 +92,6 @@
       </nav>
 
       <main role="main" class="col-md-9 ml-sm-auto col-lg-10 px-4">
-
-
-
-
-
-
 
         <div class="panel panel-default">
           <h2>Clientes</h2>
@@ -143,13 +137,12 @@
 
       </main>
 
-
     </div>
   </div>
   <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
     crossorigin="anonymous"></script>
-  
-  
+
+
 </body>
 
 </html>

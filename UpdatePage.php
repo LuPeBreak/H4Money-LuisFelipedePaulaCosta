@@ -26,7 +26,7 @@
         }
     </style>
     <!-- Custom styles for this template -->
-    <link href="Css/Style.css" rel="stylesheet">
+    <link href="/css/style.css" rel="stylesheet">
     <style type="text/css">
         /* Chart.js */
         @-webkit-keyframes chartjs-render-animation {
