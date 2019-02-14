@@ -1,8 +1,8 @@
 <?php 
 
-require __DIR__."\..\Config.php";
-require __DIR__."\Crud\Insert.php";
-require __DIR__."\ValidateClient.php";
+require __DIR__."/../Config.php";
+require __DIR__."/Crud/Insert.php";
+require __DIR__."/ValidateClient.php";
 
 $insert = new insert;
 

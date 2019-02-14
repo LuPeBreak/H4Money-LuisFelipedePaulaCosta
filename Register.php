@@ -128,7 +128,7 @@
 
                 <div class="container">
                     <h2>Cadastro de clientes</h2>
-                    <form action="App/InsertClient.php" method="POST" onSubmit='return validate()'>
+                    <form action="App\InsertClient.php" method="POST" onSubmit='return validate()'>
                         <div class="form-group">
                             Nome: <input id='nome' class="form-control" type="text" name="nome" required><br>
                             Email: <input class="email form-control" type="email" name="email"><br>

@@ -6,7 +6,7 @@ abstract class Conn{
     private static $connection = null;
 
     public function connect(){
-        require __DIR__."\..\..\Config.php";
+        require __DIR__."/../../Config.php";
         try{
             //verifica se ja existe conexao
             if(self::$connection==null){

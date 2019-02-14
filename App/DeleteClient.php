@@ -1,7 +1,7 @@
 <?php 
 
-require __DIR__."\..\Config.php";
-require __DIR__."\Crud\Delete.php";
+require __DIR__."/../Config.php";
+require __DIR__."/Crud/Delete.php";
 
 
 $delete = new Delete;

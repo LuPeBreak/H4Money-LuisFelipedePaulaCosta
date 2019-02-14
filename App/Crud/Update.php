@@ -2,7 +2,7 @@
 
 
 
-require __DIR__."\Conn.php";
+require __DIR__."/Conn.php";
 
 class Update extends conn{
 
