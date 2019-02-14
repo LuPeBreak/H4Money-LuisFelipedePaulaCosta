@@ -92,7 +92,7 @@
 </script>
 
     <nav class="navbar navbar-dark fixed-top bg-dark flex-md-nowrap p-0 shadow">
-        <a class="navbar-brand col-sm-3 col-md-2 mr-0" href="/">H4Money</a>
+        <a class="navbar-brand col-sm-3 col-md-2 mr-0" href="\">H4Money</a>
     </nav>
 
     <div class="container-fluid">
@@ -101,19 +101,19 @@
                 <div class="sidebar-sticky">
                     <ul class="nav flex-column">
                         <li class="nav-item">
-                            <a class="nav-link" href="/Count.php">
+                            <a class="nav-link" href="\Count.php">
                                 <i class="fa fa-users"></i>
                                 quantidade de Clientes
                             </a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="/Register.php">
+                            <a class="nav-link" href="\Register.php">
                                 <i class="fa fa-user-plus"></i>
                                 Cadastro de Clientes
                             </a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="/">
+                            <a class="nav-link" href="\">
                                 <i class="fa fa-user"></i>
                                 Clientes
                             </a>
