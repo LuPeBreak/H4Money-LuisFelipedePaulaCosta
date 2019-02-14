@@ -1,8 +1,8 @@
 <?php 
 
-require __DIR__."/../Config.php";
-require __DIR__."/Crud/Update.php";
-require __DIR__."/validateClient.php";
+require __DIR__."\..\Config.php";
+require __DIR__."\Crud\Update.php";
+require __DIR__."\ValidateClient.php";
 
 $update = new Update;
 
