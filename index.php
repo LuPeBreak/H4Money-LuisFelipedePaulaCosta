@@ -64,32 +64,7 @@
 
   <div class="container-fluid">
     <div class="row">
-      <nav class="col-md-2 d-none d-md-block bg-light sidebar">
-        <div class="sidebar-sticky">
-          <ul class="nav flex-column">
-            <li class="nav-item">
-              <a class="nav-link" href="/Count.php">
-                <i class="fa fa-users"></i>
-                Quantidade de Clientes
-              </a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="/Register.php">
-                <i class="fa fa-user-plus"></i>
-                Cadastro de Clientes
-              </a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="/">
-                <i class="fa fa-user"></i>
-                Clientes
-              </a>
-            </li>
-
-          </ul>
-
-        </div>
-      </nav>
+    <?php require __DIR__."/component/sidebar.php"; ?> 
 
       <main role="main" class="col-md-9 ml-sm-auto col-lg-10 px-4">
 
@@ -99,15 +74,15 @@
             <table class="table table-striped table-sm">
               <thead>
                 <tr>
-                  <th>nome</th>
-                  <th>email</th>
-                  <th>endereço</th>
-                  <th>numero</th>
-                  <th>bairro</th>
-                  <th>cep</th>
-                  <th>cidade</th>
-                  <th>uf</th>
-                  <th>cpf</th>
+                  <th>Nome</th>
+                  <th>Email</th>
+                  <th>Endereço</th>
+                  <th>Numero</th>
+                  <th>Bairro</th>
+                  <th>CEP</th>
+                  <th>Cidade</th>
+                  <th>UF</th>
+                  <th>CPF</th>
                   <th></th>
                 </tr>
               </thead>

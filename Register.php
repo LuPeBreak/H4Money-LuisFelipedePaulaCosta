@@ -92,37 +92,12 @@
 </script>
 
     <nav class="navbar navbar-dark fixed-top bg-dark flex-md-nowrap p-0 shadow">
-        <a class="navbar-brand col-sm-3 col-md-2 mr-0" href="\">H4Money</a>
+        <a class="navbar-brand col-sm-3 col-md-2 mr-0" href="/">H4Money</a>
     </nav>
 
     <div class="container-fluid">
         <div class="row">
-            <nav class="col-md-2 d-none d-md-block bg-light sidebar">
-                <div class="sidebar-sticky">
-                    <ul class="nav flex-column">
-                        <li class="nav-item">
-                            <a class="nav-link" href="\Count.php">
-                                <i class="fa fa-users"></i>
-                                Quantidade de Clientes
-                            </a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="\Register.php">
-                                <i class="fa fa-user-plus"></i>
-                                Cadastro de Clientes
-                            </a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="\">
-                                <i class="fa fa-user"></i>
-                                Clientes
-                            </a>
-                        </li>
-
-                    </ul>
-
-                </div>
-            </nav>
+        <?php require __DIR__."/component/sidebar.php"; ?>    
 
             <main role="main" class="col-md-9 ml-sm-auto col-lg-10 px-4">
 

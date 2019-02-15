@@ -97,32 +97,7 @@
 
     <div class="container-fluid">
         <div class="row">
-            <nav class="col-md-2 d-none d-md-block bg-light sidebar">
-                <div class="sidebar-sticky">
-                    <ul class="nav flex-column">
-                        <li class="nav-item">
-                            <a class="nav-link" href="/Count.php">
-                                <i class="fa fa-users"></i>
-                                Quantidade de Clientes
-                            </a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="/Register.php">
-                                <i class="fa fa-user-plus"></i>
-                                Cadastro de Clientes
-                            </a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="/">
-                                <i class="fa fa-user"></i>
-                                Clientes
-                            </a>
-                        </li>
-
-                    </ul>
-
-                </div>
-            </nav>
+            <?php require __DIR__."/component/sidebar.php"; ?>
 
             <main role="main" class="col-md-9 ml-sm-auto col-lg-10 px-4">
 
@@ -133,10 +108,10 @@
                     <h2>Atualizar Cliente</h2>
                     <form action="app/UpdateClient.php" method="POST" onSubmit='return validate()'>
                         <div class=form-group>
-                            <input type="hidden" name="id" value="<?php echo "{$cliente['id']}"?>" readonly><br>
+                            <input type="hidden" name="id" value="<?php echo " {$cliente['id']}"?>" readonly><br>
                             Nome: <input id='nome' class="nome form-control" type="nome" value="<?php echo "{$cliente['nome']}"?>"name="nome"><br>
                             Email: <input class="email form-control" type="email" value="<?php echo "{$cliente['email']}"?>" name="email"><br>
-                            cep: <input class="cep form-control" type="text" value="<?php echo "{$cliente['cep']}"?>"name="cep"><br>
+                            cep: <input class="cep form-control" type="text" value="<?php echo " {$cliente['cep']}"?>"name="cep"><br>
                             endereço: <input id='endereco' class="endereco form-control" type="text" value="<?php echo "{$cliente['endereco']}"?>" name="endereco"><br>
                             numero: <input class="numero form-control" type="text" value="<?php echo "{$cliente['numero']}"?>" name="numero"><br>
                             bairro: <input class="bairro form-control" type="text" value="<?php echo "{$cliente['bairro']}"?>" name="bairro"><br>
